@@ -1,6 +1,6 @@
 ## C Language Projects
 
-A repo for all my C,C#,C+,C++ projects
+A repo for all my random projects
 
 ## Credits
 
