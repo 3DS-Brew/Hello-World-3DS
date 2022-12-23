@@ -1,11 +1,22 @@
-#include <iostream>
-using namespace std;
+#include "Test.h"
 
-int main()
-{
-    cout << "Hello World!"  << endl;
-    cout << "This is my hello world haxe project but somewhat remade in C++"  << endl;
-    cout << "Enjoy this dumb code of nothing-ness."  << endl;
-    system("pause");
+int main(int argc, char **argv) {
+    gfxInitDefault();
+    consoleInit(GFX_TOP, NULL);
+
+    Output::printAt("Hello world!", 20, 20);
+
+    while(aptMainLoop()) {
+        hidScanInput();
+        if(hidKeysDown() & KEY_START) {
+            break;
+        }
+
+        gfxFlushBuffers();
+        gfxSwapBuffers();
+        gspWaitForVBlank();
+    }
+
+    gfxExit();
     return 0;
 }
