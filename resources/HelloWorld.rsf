@@ -1,5 +1,5 @@
 BasicInfo:
-  Title                   : "Hello World! (Remake)"
+  Title                   : "Hello World C++"
   ProductCode             : "Zero0xxHelloWrld" # You can make this whatever you want, it doesn't have to follow the Nintendo standard
   Logo                    : Nintendo # Nintendo / Licensed / Distributed / iQue / iQueForSystem
 
